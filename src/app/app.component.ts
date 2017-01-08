@@ -12,7 +12,6 @@ import { Language } from './lamguage';
     {{lang.name}}
     </li>
   </ul>
-  
   `
 })
 export class AppComponent {
