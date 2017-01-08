@@ -27,8 +27,4 @@ export class AppComponent {
     new Language('Ruby', 'Dynamic')
   ];
 
-  myLamg = this.langs[0];
-
-
-
 }
