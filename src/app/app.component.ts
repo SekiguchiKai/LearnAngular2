@@ -12,6 +12,9 @@ import { Language } from './lamguage';
     {{lang.name}}
     </li>
   </ul>
+
+<button (click)="onClick()">Click here</button>
+  <p>{{message}}</p>
   `
 })
 export class AppComponent {
@@ -25,5 +28,11 @@ export class AppComponent {
     new Language('Go', 'Static'),
     new Language('Ruby', 'Dynamic')
   ];
+
+  message = '';
+
+  onClick() {
+    this.message = 'Clicked';
+  }
 
 }
