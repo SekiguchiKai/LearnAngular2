@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<p>Languages: </p>
+<ul>
+  <li *ngFor="let lang of languages">
+    {{lang.name}}
+  </li>
+</ul>
+
+<button (click)="onClick()">Click here</button>
+<p>{{message}}</p>
+
+<input #box (keyup)="onKey(box.value)">
+<p>{{box.value}}</p>
+<lang-form></lang-form>
